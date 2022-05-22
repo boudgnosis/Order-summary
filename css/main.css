@@ -1,0 +1,163 @@
+:root {
+	/* Primary */
+	--pale-blue: hsl(225, 100%, 94%);
+	--bright-blue: hsl(245, 75%, 52%);
+	/* Neutral */
+	--very-pale-blue: hsl(225, 100%, 98%);
+	--desaturated-blue: hsl(224, 23%, 55%);
+	--dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Red Hat Display', sans-serif;
+	background-image: url(../assets/img/pattern-background-desktop.svg);
+	background-repeat: no-repeat;
+	background-color: var(--pale-blue);
+	height: 650px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	display: block;
+}
+
+.flex__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container_card {
+	background-color: var(--very-pale-blue);
+	width: 320px;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+	box-shadow: 2px 7px 30px .1px rgba(0,0,0, .5);
+}
+
+.container_card .card__img img {
+	width: 100%;
+	border-radius: 12px 12px 0 0;
+	-webkit-border-radius: 12px 12px 0 0;
+	-moz-border-radius: 12px 12px 0 0;
+	-ms-border-radius: 12px 12px 0 0;
+	-o-border-radius: 12px 12px 0 0;
+}
+
+.container_card .information h1 {
+	text-align: center;
+	font-size: 1.5em;
+	color: var(--dark-blue);
+	font-weight: 900;
+}
+
+.container_card .information .information__pa{
+	text-align: center;
+	color: var(--desaturated-blue);
+	margin: 0;
+	font-weight: 400;
+}
+
+.container_card .information .information__plan{
+	display: flex;
+	background-color: hsla(224, 23%, 55%, 0.07);
+	align-items: center;
+	padding: 6px;
+	margin: 18px 0;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+
+.container_card .information .information__plan .plan__name-price {
+	margin: 0 45px 0 10px;
+}
+
+.container_card .information .information__plan .plan__name-price p {
+	margin: 0;
+	padding: 4px;
+}
+
+.container_card .information .information__plan .plan__name-price .name{
+	color: var(--dark-blue);
+	font-size: .9em;
+	font-weight: 900;
+}
+
+.container_card .information .information__plan .plan__name-price .price{
+	color: var(--desaturated-blue);
+	font-size: .9em;
+}
+
+.information .information__plan a {
+	color: var(--bright-blue);
+	font-size: .8em;
+}
+
+.information .information__plan a:hover {
+	color: hsl(245, 60%, 61%);
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+}
+
+.container_card button {
+	border: none;
+	color: var(--very-pale-blue);
+	background-color: var(--bright-blue);
+	font-size: .9em;
+	font-weight: 700;
+	padding: 10px 60px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: 0 12px 1px 1px hsla(224, 23%, 55%, 0.07);
+}
+
+.container_card button:hover {
+	cursor: pointer;
+	background-color: hsl(245, 60%, 61%);
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+}
+
+.container_card .cancel__order {
+	color: var(--desaturated-blue);
+	font-size: .8em;
+	font-weight: 900;
+	margin: 20px 0 30px 0;
+}
+
+.container_card .cancel__order:hover {
+	cursor: pointer;
+	color: var(--dark-blue);
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+}
+
+@media (max-width:370px)  {
+	body {
+		background-image: url(../assets/img/pattern-background-mobile.svg);
+		background-repeat: no-repeat;
+		background-color: var(--pale-blue);
+	}
+}
